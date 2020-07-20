@@ -1,0 +1,207 @@
+$color: #92038a;
+$color-footer: white;
+$background-color-footer: #202020;
+$font-size-1: 45px;
+$font-size-2: 30px;
+
+
+h1 {
+	color: $color;
+	font-size: $font-size-1;
+}
+
+h2 {
+	color: $color;
+	font-size: $font-size-2;
+}
+
+
+.header__navbar {
+	background-color: $color;
+}
+
+/* Css Footer con Formulario - Flexbox - Formualario con transicion */
+
+footer {
+  background-color: $background-color-footer;
+  color: $color-footer;
+  
+}
+
+.footer__container {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+
+.footer__bloque1 {
+  padding: 10px;
+}
+
+.footer__bloque1 a {
+  color: white;
+}
+
+.footer__bloque1 h5 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.footer__bloque1 form {
+  font-size: 14px;
+  color: #C7C7C7;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__bloque1 label {
+  padding-top: 5px;
+}
+
+.footer__bloque1 input {
+  width: 400px;
+  height: 20px;
+  transition: all 2s;
+}
+
+input:focus {
+  width: 430px;
+  height: 30px;
+  font-size: 20px;
+}
+
+
+.footer__bloque1 textarea {
+  width: 400px;
+  transition: all 2s;
+}
+
+
+textarea:focus {
+  width: 430px;
+  font-size: 20px;
+}
+
+.boton{
+        padding-top: 15px;
+       }
+
+.boton input {
+  width: 70px;
+  height: 25px;
+  color: black;
+}
+
+
+.footer__bloque2 {
+  padding: 10px;
+}
+
+.footer__bloque2 h5 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.footer__bloque2__fila {
+  margin-top: 20px;
+  display: flex;
+  color: #C7C7C7;
+  font-size: 14px;
+}
+
+.footer__bloque2 img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__bloque2__fila label {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+.footer__bloque3 {
+  padding: 10px;
+}
+
+.footer__bloque3 h5 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.footer__bloque3__fila {
+  margin-top: 20px;
+  display: flex;
+  color: #C7C7C7;
+  font-size: 14px;
+}
+
+.footer__bloque3__fila--mail{
+	color:#c881b9;
+}
+
+.footer__bloque3__fila--mail img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__bloque3__fila img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__bloque3__fila--mail label {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px;
+}
+
+.footer__bloque3__fila label {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__container{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer__bloque1
+{
+    width: 100%;
+    text-align: -webkit-center;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer__bloque2, .footer__bloque3 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  .footer__bloque1
+ input {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .footer__bloque1
+ textarea {
+    width: auto;
+  }
+}
+
